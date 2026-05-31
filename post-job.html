@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Jobs - DevCareers</title>
+    <title>Post a Job - DevCareers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html" class="active">Find Jobs</a></li>
-                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="post-job.html" class="active">Post a Job</a></li>
                 <li><a href="track.html">Track Applications</a></li>
                 <li><a href="login.html" class="nav-btn">Sign In</a></li>
             </ul>
@@ -22,34 +22,29 @@
     </header>
 
     <main>
-        <section class="table-section">
-            <h2>Available Job Openings</h2>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Company</th>
-                            <th>Role</th>
-                            <th>Type</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>TechCorp Solutions</td>
-                            <td>Frontend Engineer</td>
-                            <td><span class="status-badge full-time">Full-time</span></td>
-                            <td><button class="apply-btn" onclick="checkAuth('apply')">Apply Now</button></td>
-                        </tr>
-                        <tr>
-                            <td>Innovate Lab</td>
-                            <td>UI/UX Designer</td>
-                            <td><span class="status-badge remote">Remote</span></td>
-                            <td><button class="apply-btn" onclick="checkAuth('apply')">Apply Now</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <section class="form-section">
+            <h2>Post a New Job Opening</h2>
+            <p class="section-subtitle">Fill out the details below to find your next great hire.</p>
+            <form class="job-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" placeholder="e.g., TechCorp Solutions" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-role">Job Role / Title</label>
+                    <input type="text" id="job-role" placeholder="e.g., Frontend Engineer" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-type">Job Type</label>
+                    <select id="job-type">
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                </div>
+                <button type="button" class="submit-job-btn" onclick="checkAuth('post')">Publish Job Listing</button>
+            </form>
         </section>
     </main>
 
