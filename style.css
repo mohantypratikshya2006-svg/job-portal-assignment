@@ -6,6 +6,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     color: #22223b;
@@ -25,7 +29,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #4a4e69;
+    color: #623cea;
 }
 
 nav ul {
@@ -100,6 +104,80 @@ main {
     cursor: pointer;
 }
 
+/* Post a Job Form Section Styling */
+.form-section {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #1e1e2f;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.job-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #4a4e69;
+    font-size: 14px;
+}
+
+.form-group input, .form-group select {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: #f8f9fa;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #623cea;
+    background-color: #fff;
+}
+
+.submit-job-btn {
+    padding: 14px;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-job-btn:hover {
+    background-color: #1e4e8c;
+}
+
 /* Table Sections styling */
 .table-section {
     margin-top: 40px;
@@ -147,7 +225,7 @@ th {
 }
 
 /* ==========================================================================
-   📱 MOBILE RESPONSIVE MEDIA QUERIES (Fixes the text merger/squishing issue)
+   📱 MOBILE RESPONSIVE MEDIA QUERIES (Fixes layout squishing on mobile)
    ========================================================================== */
 @media (max-width: 600px) {
     header {
@@ -179,5 +257,9 @@ th {
 
     .search-btn {
         width: 100%;
+    }
+
+    .form-section {
+        padding: 25px 15px;
     }
 }
