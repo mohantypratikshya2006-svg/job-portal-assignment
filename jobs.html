@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - DevCareers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">DevCareers</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html" class="active">Find Jobs</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="track.html">Track Applications</a></li>
+                <li><a href="login.html" class="nav-btn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="table-section">
+            <h2>Available Job Openings</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TechCorp Solutions</td>
+                            <td>Frontend Engineer</td>
+                            <td><span class="status-badge full-time">Full-time</span></td>
+                            <td><button class="apply-btn" onclick="checkAuth('apply')">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Innovate Lab</td>
+                            <td>UI/UX Designer</td>
+                            <td><span class="status-badge remote">Remote</span></td>
+                            <td><button class="apply-btn" onclick="checkAuth('apply')">Apply Now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -12,34 +12,27 @@
         <div class="logo">DevCareers</div>
         <nav>
             <ul>
-                <li><a href="#hero-section">Find Jobs</a></li>
-                <li><a href="#post-job-section">Post a Job</a></li>
-                <li><a href="#table-section">Track Applications</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="track.html">Track Applications</a></li>
+                <li><a href="login.html" class="nav-btn">Sign In</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero-section" class="hero-section">
+        <section class="hero-section">
             <h1>Find Your Dream <br>Tech Job</h1>
             <p>Discover thousands of opportunities in development, design, and product management.</p>
             
             <div class="search-container">
-                <input type="text" placeholder="Teacher" value="Teacher">
-                <button class="search-btn">Search</button>
+                <input type="text" placeholder="e.g. Frontend Developer, Teacher" id="search-input">
+                <button class="search-btn" onclick="location.href='jobs.html'">Search</button>
             </div>
         </section>
+    </main>
 
-        <section id="post-job-section" class="form-section">
-            <h2>Post a New Job Opening</h2>
-            <p class="section-subtitle">Fill out the details below to find your next great hire.</p>
-            <form class="job-form" onsubmit="event.preventDefault();">
-                <div class="form-group">
-                    <label for="company-name">Company Name</label>
-                    <input type="text" id="company-name" placeholder="e.g., TechCorp Solutions">
-                </div>
-                <div class="form-group">
-                    <label for="job-role">Job Role / Title</label>
-                    <input type="text" id="job-role" placeholder="e.g., Frontend Engineer">
-                </div>
-                <div class="form-group">
+    <script src="script.js"></script>
+</body>
+</html>
