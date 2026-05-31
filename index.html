@@ -3,107 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevCareers | Tech Job Portal</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>DevCareers - Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
+    <!-- Header Navigation -->
+    <header>
         <div class="logo">DevCareers</div>
         <nav>
             <ul>
-                <li><a href="#jobs">Find Jobs</a></li>
-                <li><a href="#post-job">Post a Job</a></li>
-                <li><a href="#applications">Track Applications</a></li>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">Track Applications</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Search Section -->
     <main>
         <section class="hero-section">
-            <h1>Find Your Dream Tech Job</h1>
+            <h1>Find Your Dream <br>Tech Job</h1>
             <p>Discover thousands of opportunities in development, design, and product management.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Job title or keyword...">
-                <button type="button">Search</button>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Teacher" value="Teacher">
+                <button class="search-btn">Search</button>
             </div>
         </section>
 
-        <section id="jobs" class="job-listings-container">
+        <!-- Featured Job Openings Table Section -->
+        <section class="table-section">
             <h2>Featured Job Openings</h2>
-            <div class="job-grid">
-                <div class="job-card">
-                    <span class="badge full-time">Full-Time</span>
-                    <h3>Frontend Engineer</h3>
-                    <p class="company">TechCorp Solutions</p>
-                    <p class="location">📍 Remote (US/Canada)</p>
-                    <p class="salary">$90,000 - $110,000</p>
-                    <button class="btn-apply">Apply Now</button>
-                </div>
-                <div class="job-card">
-                    <span class="badge remote">Remote</span>
-                    <h3>UI/UX Designer</h3>
-                    <p class="company">Creative Studio</p>
-                    <p class="location">📍 New York, NY (Hybrid)</p>
-                    <p class="salary">$80,000 - $95,000</p>
-                    <button class="btn-apply">Apply Now</button>
-                </div>
-                <div class="job-card">
-                    <span class="badge contract">Contract</span>
-                    <h3>Full Stack Developer</h3>
-                    <p class="company">Innovate Lab</p>
-                    <p class="location">📍 Remote (Worldwide)</p>
-                    <p class="salary">$70 - $90 / hr</p>
-                    <button class="btn-apply">Apply Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="post-job" class="form-section">
-            <h2>Candidate Profile Registration</h2>
-            <form action="#" method="POST" class="registration-form">
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="role">Desired Role:</label>
-                    <select id="role" name="role">
-                        <option value="frontend">Frontend Developer</option>
-                        <option value="backend">Backend Developer</option>
-                        <option value="uiux">UI/UX Designer</option>
-                        <option value="qa">QA Engineer</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="experience">Experience Level:</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="experience" value="entry" checked> Entry Level</label>
-                        <label><input type="radio" name="experience" value="mid"> Mid Level</label>
-                        <label><input type="radio" name="experience" value="senior"> Senior Level</label>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-submit">Register Profile</button>
-            </form>
-        </section>
-
-        <section id="applications" class="table-section">
-            <h2>Your Sent Applications</h2>
             <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr>
                             <th>Company</th>
                             <th>Role</th>
-                            <th>Date Applied</th>
+                            <th>Date</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -112,13 +50,7 @@
                             <td>TechCorp Solutions</td>
                             <td>Frontend Engineer</td>
                             <td>May 28, 2026</td>
-                            <td><span class="status-badge interview">Interview Scheduled</span></td>
-                        </tr>
-                        <tr>
-                            <td>Creative Studio</td>
-                            <td>UI/UX Designer</td>
-                            <td>May 25, 2026</td>
-                            <td><span class="status-badge pending">Under Review</span></td>
+                            <td><span class="status-badge interview">Interview</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -126,10 +58,6 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 DevCareers Hub. All privileges reserved.</p>
-    </footer>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
